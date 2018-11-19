@@ -6,7 +6,7 @@ export default {
  	name: 'mod1',
  	data () {
 	    return {
-            mod: 'mod1'
+            mod: 'mod1--899'
 	    }
   	},
  	mounted(){

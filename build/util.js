@@ -27,11 +27,9 @@ function getHtmlList (fn) {
     urls.forEach(fn);
 }
 
-
 exports.HtmlWebpackPlugins_dev = function () {
     var pList=[]
     getHtmlList(function (n) {
-        console.log(n.dist);
         var str=''
         pList.push(new HtmlWebpackPlugin({
           filename: str+n.dist,
