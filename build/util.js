@@ -35,7 +35,7 @@ exports.HtmlWebpackPlugins_dev = function () {
         pList.push(new HtmlWebpackPlugin({
           filename: str+n.dist,
           template: n.file,
-          chunks: ['manifest', 'vendor', n.name,'commons'],
+          chunks: ['vendor', n.name,'util'],
           inject: true
         }))
     });

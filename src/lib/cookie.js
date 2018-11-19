@@ -1,3 +1,5 @@
+
+// cookie.js
 ;(function (factory) {
 	var registeredInModuleLoader = false;
 	if (typeof define === 'function' && define.amd) {

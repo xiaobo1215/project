@@ -83,22 +83,13 @@ module.exports = {
                     // 设置优先级，防止和自定义的公共代码提取时被覆盖，不进行打包
                     priority: -10    
                 },
-                commons: { // 抽离自己写的公共代码，utils这个名字可以随意起 (css/js公用的都会单独抽离出来生成一个单独的文件)
-                    name: "commons",
-                    chunks: "all",
+                util: { // 抽离自己写的公共代码，utils这个名字可以随意起 (css/js公用的都会单独抽离出来生成一个单独的文件)
+                    name: "util",
+                    chunks: "initial",
                     minChunks: 2,
-                    priority: 1
+                    priority: 8,
+                    test:/lib/
                 }
-                // styles:{
-                //     name:'styles',
-                //     test:'/\.(less|css)$/',
-                //     chunks:'all',
-                //     minChunks:2,
-                //     name: "base",
-                //     reuseExistingChunk:true,
-                //     enforce:true,
-                //     priority: 2
-                // }
             }
         }
     }
