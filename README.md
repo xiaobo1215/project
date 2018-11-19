@@ -25,7 +25,7 @@ npm run build
 ├── dist                        //打包后的文件
 ├── package.json                //node依赖配置文件
 ├── src                         //源码目录
-│   ├── page                    //HTML页面入口
+    ├── page                    //HTML页面入口
         |── index               index.html 页面
             |──index.js         js入口文件
             |──style            样式文件
@@ -34,4 +34,6 @@ npm run build
         |── page1               page1.html 页面
         |── page1               page2.html 页面
         |....                   随便增加文件夹,规则遵循index文件夹,创建后会自动打包
+    ├──img                      放图片的
+    ├──lib                      还没想好放点啥，先放点js文件打包试试结果
 ```
