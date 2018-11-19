@@ -33,5 +33,5 @@ npm run build
             |──component        组建文件
         |── page1               page1.html 页面
         |── page1               page2.html 页面
-        |....                   随便文件夹,规则遵循index文件夹,创建后会自动打包
+        |....                   随便增加文件夹,规则遵循index文件夹,创建后会自动打包
 ```
