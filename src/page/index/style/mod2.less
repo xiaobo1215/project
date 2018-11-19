@@ -1,5 +1,28 @@
+//定义变量  
+@gray:#555;
+@orange:orange;
 
-.mod2 {
-    height: 50px;
-    background: seagreen;
+
+@height: 50px;
+
+.base{
+    height: @height;
+    line-height: @height;
+    text-align: center;
+}
+
+
+.body {
+    .mod2 {
+        .wrap {
+            background: @gray;
+            color: @orange;
+            .base
+        }
+        .p {
+            color: #fff;
+            .base;
+            background: @gray;
+        }
+    }
 }
