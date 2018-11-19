@@ -3,8 +3,7 @@
 # Vue + VueRouter + webpack 
 
 ## 安装
-npm install 
-
+npm install ...
 
 ## 本地开发和调试
 npm run dev //启动本地服务器
@@ -15,14 +14,14 @@ npm run build
 ## 技术选型
 
 - 框架 - Vue+VueRouter
-- 模块化 - webpack,CommonJS规范 , es6Module
+- 模块化 - webpack,CommonJS规范,es6Module
 - 构建工具 - webpack
 
 ## 目录结构
 
 ```
 ├── README.md                   //项目说明文档 
-├── node_modules
+├── node_modules                //乱七八糟的各种依赖包
 ├── dist                        //打包后的文件
 ├── package.json                //node依赖配置文件
 ├── src                         //源码目录
