@@ -1,12 +1,13 @@
 
+<template src='../tpl/mod2.html'></template>
 
-<template src='./tpl/root.html'></template>
 <script>
+import '../style/mod2.less';
 export default {
- 	name: 'App',
+ 	name: 'mod2',
  	data () {
 	    return {
-            resourceList: '1230008880456'
+            mod: 'mod2'
 	    }
   	},
  	mounted(){

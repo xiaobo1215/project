@@ -1,17 +1,8 @@
 
-<style lang="less">
-	.mod2 {
-		height: 50px;
-		background: sandybrown;
-	}
-</style>
-<template>
-	<div class="mod2">
-		{{mod}}
-	</div>
-</template>
-<script>
+<template src='../tpl/mod2.html'></template>
 
+<script>
+import '../style/mod2.less';
 export default {
  	name: 'mod2',
  	data () {
