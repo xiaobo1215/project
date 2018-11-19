@@ -2,9 +2,6 @@
 
 # Vue + VueRouter + webpack 
 
-## 注意
-html下为入口主页面
-
 ## 安装
 npm install 
 
