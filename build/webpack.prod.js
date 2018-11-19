@@ -13,7 +13,6 @@ module.exports = merge(common, { // 将webpack.common.js合并到当前文件
             filename: "css/[name].css",
             chunkFilename: "[id].css"
         }),
-        // new CleanWebpackPlugin([ "../dist/"]),  // 所要清理的文件夹名称
         new CleanWebpackPlugin('dist', {
             root:path.join( __dirname, "../"),
             verbose: true,
