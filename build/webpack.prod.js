@@ -11,7 +11,7 @@ module.exports = merge(common, { // 将webpack.common.js合并到当前文件
     plugins: [
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
-            chunkFilename: "[id].css"
+            chunkFilename: "css/[name].css"
         }),
         new CleanWebpackPlugin('dist', {
             root:path.join( __dirname, "../"),
