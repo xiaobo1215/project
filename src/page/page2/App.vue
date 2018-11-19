@@ -2,7 +2,6 @@
 
 <template src='./tpl/root.html'></template>
 <script>
-import '../../css/base.css';
 export default {
  	name: 'App',
  	data () {
