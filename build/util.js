@@ -14,6 +14,7 @@ exports.getEntry=function(){
         let na=path.dirname(name).split('/').pop()
         entry[na]=path.resolve('./', name)
     });
+    console.log(entry,'-------------entry----------------')
     return entry
 }
 
@@ -34,7 +35,7 @@ exports.HtmlWebpackPlugins_dev = function () {
         pList.push(new HtmlWebpackPlugin({
           filename: str+n.dist,
           template: n.file,
-          chunks: ['manifest', 'vendor', n.name],
+          chunks: ['manifest', 'vendor', n.name,'commons'],
           inject: true
         }))
     });

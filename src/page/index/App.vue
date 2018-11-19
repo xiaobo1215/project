@@ -1,5 +1,4 @@
 
-
 <template src='./tpl/root.html'></template>
 <script>
 import '../../css/base.css';
@@ -11,7 +10,7 @@ export default {
 	    }
   	},
  	mounted(){
-        // this.superLogin()
+        
     },
  	methods: {
 
