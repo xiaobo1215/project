@@ -8,7 +8,7 @@ const pageBase = path.resolve(__dirname, '../src/pages')
 
 var entry = {};
 //读取src目录所有page入口
-exports.getEntry=function(){
+exports.getEntrys=function(){
     var reg=/(?=(\w+\.js))/
     glob.sync('./src/page/**/index.js').forEach(function (name) {
         let na=path.dirname(name).split('/').pop()
@@ -18,7 +18,7 @@ exports.getEntry=function(){
     return entry
 }
 
-function getHtmlList (fn) {
+function HtmlList (fn) {
     var urls = [];
     let entryHtml = glob.sync('./src/page/**/index.html')
     entryHtml.forEach((filePath) => {
@@ -28,9 +28,9 @@ function getHtmlList (fn) {
     urls.forEach(fn);
 }
 
-exports.HtmlWebpackPlugins_dev = function () {
+exports.htmlPlugin = function () {
     var pList=[]
-    getHtmlList(function (n) {
+    HtmlList(function (n) {
         var str=''
         pList.push(new HtmlWebpackPlugin({
           filename: str+n.dist,

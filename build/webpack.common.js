@@ -8,7 +8,7 @@ const vueLoaderConfig = require('./vue-loader.conf')
 const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
-    entry:util.getEntry(), 
+    entry:util.getEntrys(), 
     output: {
         path: path.join( __dirname, "../dist"), //打包后的文件存放的地方
         filename: "js/[name].js",//打包后输出文件的文件名
@@ -72,7 +72,7 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin()
-    ].concat(util.HtmlWebpackPlugins_dev()),
+    ].concat(util.htmlPlugin()),
     optimization: {
         splitChunks: {
             cacheGroups: {
